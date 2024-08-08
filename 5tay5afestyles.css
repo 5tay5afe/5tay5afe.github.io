@@ -50,6 +50,7 @@ body {
 #trigger-text2, #trigger-text3, #trigger-text4 {
     color: #ffffff;
     cursor: pointer;
+    text-decoration: none
 }
 
 .vertical-column {
