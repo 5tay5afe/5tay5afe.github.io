@@ -57,6 +57,14 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: none; 
+}
+
+a strong {
+    text-decoration: none; 
+}
+
 .vertical-column {
     display: flex;
     flex-direction: column;
