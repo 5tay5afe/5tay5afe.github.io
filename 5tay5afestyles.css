@@ -1,0 +1,599 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    background-image: url('bkg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #ffffff;
+
+}
+
+/*HOMEPAGE*/
+
+.link {
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.update {
+    position: absolute;
+    top: 60px;
+    left: 1100px;
+    padding: 5px;
+    cursor: move;
+    z-index: 999; /* Ensure update above*/
+}
+
+.popup-note {
+    display: none; /* Hidden by default */
+    position: absolute;
+    color: #2277cc;
+    background-color: #ffffff;
+    border: 1px solid #2277cc;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 250px;
+    height: 250px;
+}
+
+#trigger-text {
+    color: #2277cc;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#trigger-text2, #trigger-text3, #trigger-text4 {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.vertical-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.homechat {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 10px;
+}
+
+/*READING*/
+.img1 {
+    width: 250px;
+    height: auto;
+    cursor: pointer;
+    z-index: 104; /*MINDFUL*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img1container {
+    position: absolute;
+    width: 250px; /* Including padding */
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 104; /*MINDFUL*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 11vh; 
+    left: 19vh; 
+}
+
+.img2 {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    z-index: 105; /*MALATESTA*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img2container {
+    position: absolute;
+    width: 200px; /* Including padding */
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 30vh; 
+    left: 44vh; 
+}
+
+.img3 {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    z-index: 116; /*KANEHSATAKE*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img3container {
+    position: absolute;
+    width: 200px; /* Including padding */
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 116; /*KANEHSATAKE*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 43vh; 
+    left: 60vh; 
+}
+
+.img4 {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    z-index: 115; /*HAYXTT*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img4container {
+    position: absolute;
+    width: 70px; /* Including padding */
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 115; /*HAYXTT*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 49vh; 
+    left: 26.5vh;
+}
+
+.img5 {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    z-index: 110; /*SAVTTV*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img5container {
+    position: absolute;
+    width: 70px; /* Including padding */
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 110; /*SAVTTV*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 74vh; 
+    left: 16vh; 
+}
+
+.img6 {
+    width: 250px;
+    height: auto;
+    cursor: pointer;
+    z-index: 100; /*CONSENT*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img6container {
+    position: absolute;
+    width: 250px; /* Including padding */
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 100; /*CONSENT*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 19vh; /* Random top position */
+    left: 45vh; /* Random left position */
+}
+
+.img7 {
+    width: 225px;
+    height: auto;
+    cursor: pointer;
+    z-index: 115; /*defundthepolice*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img7container {
+    position: absolute;
+    width: 225px; /* Including padding */
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 115; /*defundthepolice*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 69vh; 
+    left: 21vh; 
+}
+
+.img8 {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    z-index: 101; /*CCA*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img8container {
+    position: absolute;
+    width: 200px; /* Including padding */
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 101; /*CCA*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 41.5vh; 
+    left: 31.5vh; 
+}
+
+.img9 {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    z-index: 107; /*1granary*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img9container {
+    position: absolute;
+    width: 150px; /* Including padding */
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 107; /*1granary*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 55vh; 
+    left: 15vh; 
+}
+
+.img10 {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    z-index: 111; /*thinkingfashion*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img10container {
+    position: absolute;
+    width: 150px; /* Including padding */
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 111; /*thinkingfashion*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 56.9vh; 
+    left: 2vh; 
+}
+
+.img11 {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    z-index: 110; /*changeoffline*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img11container {
+    position: absolute;
+    width: 300px; 
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 110; /*changeoffline*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 55vh; 
+    left: 52vh; 
+}
+
+.img12 {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    z-index: 105; /*thework*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img12container {
+    position: absolute;
+    width: 150px; 
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 105; /*thework*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 15vh; /* Random top position */
+    left: 27.5vh; /* Random left position */
+}
+
+.img13 {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    z-index: 100; /*benjamin*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img13container {
+    position: absolute;
+    width: 200px; 
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 100; /*benjamin*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 2vh; 
+    left: 2vh; 
+}
+
+.img14 {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    z-index: 102; /*Free-Palestine-Worldwide*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img14container {
+    position: absolute;
+    width: 150px; 
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 102; /*Free-Palestine-Worldwide*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 2vh; 
+    left: 67vh; 
+}
+
+.img15 {
+    width: 90px;
+    height: auto;
+    cursor: pointer;
+    z-index: 106; /*radioalhara*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img15container {
+    position: absolute;
+    width: 90px; 
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 106; /*radioalhara*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 10vh; 
+    left: 20vh; 
+}
+
+.img16 {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    z-index: 100; /*wondercabinet*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img16container {
+    position: absolute;
+    width: 200px; 
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 100; /*wondercabinet*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 58.5vh; 
+    left: 53vh;
+}
+
+.img17 {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    z-index: 106; /* pflp */
+    position: relative;
+    display: block;
+    margin: 0 auto; 
+}
+
+.img17container {
+    position: absolute;
+    width: 150px; 
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 106; /*pflp*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 50vh; 
+    left: 81vh;
+}
+
+.img18 {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    z-index: 190; /*Dries Van Noten*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img18container {
+    position: absolute;
+    width: 100px; 
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 190; /*Dries Van Noten*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 9vh; 
+    left: 83vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CHATROOM*/
+.chathome{
+position: absolute;
+top: 5px;
+right: 5px;
+padding: 10px;
+
+}
+
+.Chatroom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 75%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*YOUTUBE*/
+.YouTubeVid1 {
+    position: absolute;
+    top: 2vh; 
+    left: 24vh;
+    padding: 10px;
+    cursor: move;
+    z-index: 101; /*YOUTUBE-ALICE*/
+}
+
+.YouTubeVid2 {
+    position: absolute;
+    top: 34vh; 
+    left: 1vh; 
+    padding: 10px;
+    cursor: move;
+    z-index: 108; /*YOUTUBE-ARPI*/
+}
+
+.YouTubeVid3 {
+    position: absolute;
+    top: 21vh; 
+    left: 71vh; 
+    padding: 10px;
+    cursor: move;
+    z-index: 106; /*YOUTUBE-SAV*/
+}
+
+.YouTubeVid4 {
+    position: absolute;
+    top: 29vh; 
+    left: 5vh; 
+    padding: 10px;
+    cursor: move;
+    z-index: 104; /*YOUTUBE-MEGAN*/
+}
+
+.YouTubeVid5 {
+    position: absolute;
+    top: 72vh; 
+    left: 19vh; 
+    padding: 10px;
+    cursor: move;
+    z-index: 105; /*YOUTUBE-JULIE*/
+}
+
+
+/*SPOTIFY*/
+.spotify-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
