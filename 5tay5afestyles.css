@@ -55,20 +55,30 @@ body {
 
 a {
     text-decoration: none;
+    z-index: 999; /* Ensure update above*/
 }
 
 a:hover {
-    text-decoration: none; 
+    text-decoration: none;
+    z-index: 999; /* Ensure update above*/ 
 }
 
 a strong {
-    text-decoration: none; 
+    text-decoration: none;
+    z-index: 999; /* Ensure update above*/ 
 }
 
 .vertical-column {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 999; /* Ensure update above*/
+}
+
+.vertical-column a {
+    display: block;
+    margin-bottom: 10px; /* Adds space between links */
+    z-index: 999; /* Ensure update above*/
 }
 
 .homechat {
