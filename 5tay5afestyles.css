@@ -634,8 +634,8 @@ padding: 10px;
 }
 
 
-/*SPOTIFY*/
-.spotify-container {
+/*bandcamp*/
+.bandcamp-container {
     display: flex;
     justify-content: center;
     align-items: center;
