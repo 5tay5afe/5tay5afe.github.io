@@ -7,6 +7,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    width: 100vh;
     color: #ffffff;
 
 }
@@ -29,6 +30,28 @@ body {
 }
 
 .popup-note {
+    display: none; /* Hidden by default */
+    position: absolute;
+    color: #2277cc;
+    background-color: #ffffff;
+    border: 1px solid #2277cc;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 250px;
+    height: 250px;
+}
+
+.update2 {
+    position: absolute;
+    top: 60px;
+    left: 1100px;
+    padding: 5px;
+    cursor: move;
+    z-index: 999; /* Ensure update above*/
+}
+
+.popup-rule {
     display: none; /* Hidden by default */
     position: absolute;
     color: #2277cc;
@@ -493,7 +516,7 @@ a strong {
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
     top: 50vh; 
-    left: 81vh;
+    left: 74.5vh;
 }
 
 .img18 {
