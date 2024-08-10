@@ -83,7 +83,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    z-index: 999; /* Ensure update above*/ 
+    z-index: 999; /* Ensure update above*/
 }
 
 a strong {
@@ -102,6 +102,7 @@ a strong {
     display: block;
     margin-bottom: 10px; /* Adds space between links */
     z-index: 999; /* Ensure update above*/
+    background-color: rgba(54, 46, 38, 0.249);
 }
 
 .homechat {
@@ -140,7 +141,7 @@ a strong {
     width: 200px;
     height: auto;
     cursor: pointer;
-    z-index: 105; /*MALATESTA*/
+    z-index: 104; /*MALATESTA*/
     position: relative;
     display: block;
     margin: 0 auto; /* Center the image horizontally */
@@ -152,6 +153,7 @@ a strong {
     height: auto;
     padding: 10px;
     cursor: move;
+    z-index: 104; /*MALATESTA*/
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
@@ -543,8 +545,53 @@ a strong {
     left: 83vh;
 }
 
+.img19 {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    z-index: 190; /*union*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
 
+.img19container {
+    position: absolute;
+    width: 150px; 
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 190; /*union*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 69vh; 
+    left: 84vh
+}
 
+.img20 {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    z-index: 160; /*flower*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img20container {
+    position: absolute;
+    width: 150px; 
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 160; /*flower*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 51vh; 
+    left: 90vh
+}
 
 
 
@@ -636,10 +683,11 @@ padding: 10px;
 
 /*bandcamp*/
 .bandcamp-container {
+    position: fixed;
+    bottom:0;
+    width: 100vh;
+    height: 120px; /* Ensure this matches the iframe's height */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
 }
