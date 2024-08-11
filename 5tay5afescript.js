@@ -97,6 +97,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const img17 = img17Container.querySelector('.img17');
     const img18Container = document.getElementById('img18container');
     const img18 = img18Container.querySelector('.img18');
+    const img19Container = document.getElementById('img19container');
+    const img19 = img19Container.querySelector('.img19');
+    const img20Container = document.getElementById('img20container');
+    const img20 = img20Container.querySelector('.img20');
     const youTubeVid1 = document.querySelector('.YouTubeVid1');
     const youTubeVid2 = document.querySelector('.YouTubeVid2');
     const youTubeVid3 = document.querySelector('.YouTubeVid3');
@@ -152,6 +156,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     makeDraggable(img16Container, img16Container);
     makeDraggable(img17Container, img17Container);
     makeDraggable(img18Container, img18Container);
+    makeDraggable(img19Container, img19Container);
+    makeDraggable(img20Container, img20Container);
     makeDraggable(youTubeVid1, youTubeVid1);
     makeDraggable(youTubeVid2, youTubeVid2);
     makeDraggable(youTubeVid3, youTubeVid3);

@@ -25,8 +25,8 @@ body {
     padding: 5px;
     cursor: move;
     z-index: 999; /* Ensure update above*/
-    top: 60vh;
-    left: 90vh;
+    top: 125px;
+    left: 750px;
 }
 
 .popup-note {
@@ -98,8 +98,8 @@ a strong {
 
 .homechat {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 25px;
+    right: 25px;
     padding: 10px;
 }
 
@@ -124,8 +124,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 11vh; 
-    left: 19vh; 
+    top: 25px; 
+    left: 100px; 
 }
 
 .img2 {
@@ -148,8 +148,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 30vh; 
-    left: 44vh; 
+    top: 325px; 
+    left: 400px; 
 }
 
 .img3 {
@@ -172,8 +172,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 43vh; 
-    left: 60vh; 
+    top: 200px; 
+    left: 800px; 
 }
 
 .img4 {
@@ -196,15 +196,15 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 49vh; 
-    left: 26.5vh;
+    top: 500px; 
+    left: 650px;
 }
 
 .img5 {
     width: 70px;
     height: auto;
     cursor: pointer;
-    z-index: 110; /*SAVTTV*/
+    z-index: 251; /*SAVTTV*/
     position: relative;
     display: block;
     margin: 0 auto; /* Center the image horizontally */
@@ -216,12 +216,12 @@ a strong {
     height: auto;
     padding: 10px;
     cursor: move;
-    z-index: 110; /*SAVTTV*/
+    z-index: 251; /*SAVTTV*/
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 74vh; 
-    left: 16vh; 
+    top: 225px; 
+    left: 325px;
 }
 
 .img6 {
@@ -244,8 +244,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 19vh; /* Random top position */
-    left: 45vh; /* Random left position */
+    top: 270px; 
+    left: 200px;
 }
 
 .img7 {
@@ -268,8 +268,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 69vh; 
-    left: 21vh; 
+    top: 615px; 
+    left: 770px; 
 }
 
 .img8 {
@@ -292,8 +292,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 41.5vh; 
-    left: 31.5vh; 
+    top: 500px; 
+    left: 300px; 
 }
 
 .img9 {
@@ -316,8 +316,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 55vh; 
-    left: 15vh; 
+    top: 225px; 
+    left: 75px;  
 }
 
 .img10 {
@@ -340,8 +340,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 56.9vh; 
-    left: 2vh; 
+    bottom: 200px; 
+    left: 1015px; 
 }
 
 .img11 {
@@ -364,8 +364,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 55vh; 
-    left: 52vh; 
+    bottom: 25px; 
+    right: 25px; 
 }
 
 .img12 {
@@ -388,8 +388,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 15vh; /* Random top position */
-    left: 27.5vh; /* Random left position */
+    top: 425px; 
+    right: 620px; 
 }
 
 .img13 {
@@ -412,8 +412,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 2vh; 
-    left: 2vh; 
+    top: 100px; 
+    left: 1100px; 
 }
 
 .img14 {
@@ -436,8 +436,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 2vh; 
-    left: 67vh; 
+    top: 250px; 
+    left: 575px; 
 }
 
 .img15 {
@@ -460,8 +460,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 10vh; 
-    left: 20vh; 
+    top: 150px; 
+    left: 25px; 
 }
 
 .img16 {
@@ -484,8 +484,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 58.5vh; 
-    left: 53vh;
+    top: 225px; 
+    left: 375px;
 }
 
 .img17 {
@@ -508,8 +508,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 50vh; 
-    left: 74.5vh;
+    top: 450px; 
+    left: 600px;
 }
 
 .img18 {
@@ -528,12 +528,12 @@ a strong {
     height: auto;
     padding: 10px;
     cursor: move;
-    z-index: 190; /*Dries Van Noten*/
+    z-index: 255; /*Dries Van Noten*/
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 9vh; 
-    left: 83vh;
+    top: 620px; 
+    left: 200px;
 }
 
 .img19 {
@@ -556,8 +556,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 69vh; 
-    left: 84vh
+    bottom: 100px; 
+    left: 1300px;
 }
 
 .img20 {
@@ -580,8 +580,8 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    top: 51vh; 
-    left: 90vh
+    top: 375px; 
+    left: 100px;
 }
 
 
@@ -628,26 +628,26 @@ padding: 10px;
 /*YOUTUBE*/
 .YouTubeVid1 {
     position: absolute;
-    top: 2vh; 
-    left: 24vh;
+    top: 100px; 
+    left: 300px;
     padding: 10px;
     cursor: move;
-    z-index: 101; /*YOUTUBE-ALICE*/
+    z-index: 199; /*YOUTUBE-ALICE*/
 }
 
 .YouTubeVid2 {
     position: absolute;
-    top: 34vh; 
-    left: 1vh; 
+    top: 475px; 
+    left: 50px;  
     padding: 10px;
     cursor: move;
-    z-index: 108; /*YOUTUBE-ARPI*/
+    z-index: 200; /*YOUTUBE-ARPI*/
 }
 
 .YouTubeVid3 {
     position: absolute;
-    top: 21vh; 
-    left: 71vh; 
+    top: 335px; 
+    left: 750px; 
     padding: 10px;
     cursor: move;
     z-index: 106; /*YOUTUBE-SAV*/
@@ -655,17 +655,17 @@ padding: 10px;
 
 .YouTubeVid4 {
     position: absolute;
-    top: 29vh; 
-    left: 5vh; 
+    top: 550px; 
+    left: 400px;  
     padding: 10px;
     cursor: move;
-    z-index: 104; /*YOUTUBE-MEGAN*/
+    z-index: 125; /*YOUTUBE-MEGAN*/
 }
 
 .YouTubeVid5 {
     position: absolute;
-    top: 72vh; 
-    left: 19vh; 
+    top: 655px; 
+    left: 650px;   
     padding: 10px;
     cursor: move;
     z-index: 105; /*YOUTUBE-JULIE*/
@@ -682,3 +682,33 @@ padding: 10px;
     justify-content: center;
     align-items: center;
 }
+
+/*personal log*/
+.grid-container {
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    position: relative;
+    text-align: center;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .grid-item .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 30px;
+  }
+  
