@@ -340,7 +340,7 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    bottom: 200px; 
+    top: 450px; 
     left: 1015px; 
 }
 
@@ -364,7 +364,7 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    bottom: 25px; 
+    top: 750px; 
     right: 25px; 
 }
 
@@ -556,7 +556,7 @@ a strong {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
-    bottom: 100px; 
+    top: 700px; 
     left: 1300px;
 }
 
@@ -584,6 +584,29 @@ a strong {
     left: 100px;
 }
 
+.img21 {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    z-index: 115; /*surface tension*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.img21container {
+    position: absolute;
+    width: 150px; 
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 115; /*surface tension*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    top: 185px; 
+    left: 950px;
+}
 
 
 
@@ -674,29 +697,33 @@ padding: 10px;
 }
 
 /*personal log*/
-/* Grid container for images */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 10px;
     padding: 10px;
-    height: 100vh;
-    width: 100vw; /* Full viewport width */
-    box-sizing: border-box; /* Ensure padding is included in width calculation */
-    overflow-y: auto; /* Allow scrolling if content overflows */
+    width: 100%; /* Ensure grid container does not exceed viewport width */
+    max-width: 100vw; /* Prevent horizontal overflow */
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0 auto;
 }
 
 /* Grid item with responsive image */
 .grid-item {
     position: relative;
     text-align: center;
+    padding: 10px; /* Ensure padding for text-only items */
+    box-sizing: border-box;
 }
 
+/* Fix image size to prevent resizing */
 .grid-item img {
     width: 100%;
+    width: 250px;
     height: auto;
     display: block;
-    border-radius: 8px; /* Optional: adds rounded corners */
 }
 
 /* Overlay text */
@@ -707,5 +734,32 @@ padding: 10px;
     transform: translate(-50%, -50%);
     color: black;
     font-size: 30px;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* Optional: adds shadow for readability */
+}
+
+/* Styling for text-only blocks */
+.grid-item .text-only {
+    font-size: 20px;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: auto;
+    background-color: #ffffff; /* Different background for text items */
+    text-align: center;
+}
+
+/* Ensure no content is covered at the top, left, and right */
+body {
+    margin: 0; /* Remove default body margin */
+    padding-top: 20px; /* Add space at the top */
+    padding-left: 20px; /* Add space on the left */
+    padding-right: 20px; /* Add space on the right */
+    box-sizing: border-box;
+}
+
+.grid-container {
+    padding-bottom: 20px; /* Add space at the bottom */
+    height: auto; /* Adjust height to allow content to grow */
 }
