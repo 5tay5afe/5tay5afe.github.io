@@ -674,27 +674,32 @@ padding: 10px;
 }
 
 /*personal log*/
+/* Grid container for images */
 .grid-container {
     display: grid;
-    align-content: center;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 10px;
     padding: 10px;
-    height: 100vh; /* Full viewport height */
-    width: 90vw; /* Full viewport width */
-  }
-  
+    height: 100vh;
+    width: 100vw; /* Full viewport width */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Grid item with responsive image */
 .grid-item {
     position: relative;
     text-align: center;
-  }
-  
+}
+
 .grid-item img {
     width: 100%;
     height: auto;
     display: block;
-  }
-  
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+/* Overlay text */
 .grid-item .overlay-text {
     position: absolute;
     top: 50%;
@@ -702,5 +707,5 @@ padding: 10px;
     transform: translate(-50%, -50%);
     color: black;
     font-size: 30px;
-  }
-  
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* Optional: adds shadow for readability */
+}
