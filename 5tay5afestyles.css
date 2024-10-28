@@ -39,7 +39,7 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     width: 250px;
-    height: 250px;
+    height: 425px;
 }
 
 .popup-rule {
@@ -608,11 +608,53 @@ a strong {
     left: 950px;
 }
 
+.img22 {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    z-index: 115; /*slowfactory*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
 
+.img22container {
+    position: absolute;
+    width: 150px; 
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 115; /*slowfactory*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    bottom: 25px; 
+    left: 1000px;
+}
 
+.img23 {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    z-index: 105; /*samaa*/
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
 
-
-
+.img23container {
+    position: absolute;
+    width: 150px; 
+    height: auto;
+    padding: 10px;
+    cursor: move;
+    z-index: 115; /*samaa*/
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    bottom: 105px; 
+    right: 600px;
+}
 
 
 
