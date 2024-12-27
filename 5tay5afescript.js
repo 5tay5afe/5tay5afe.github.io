@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'img6container', 'img7container', 'img8container', 'img9container', 'img10container',
         'img11container', 'img12container', 'img13container', 'img14container', 'img15container',
         'img16container', 'img17container', 'img18container', 'img19container', 'img20container',
-        'img21container', 'img22container', 'img23container'
+        'img21container', 'img22container', 'img23container', 'img24container','img25container'
     ];
 
     const videoClasses = [
