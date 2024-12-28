@@ -1,107 +1,178 @@
-body {
-    padding: 0;
-    margin: 0;
-    font-family: Helvetica;
-    background-image: url('bkg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    height: 100vh;
-    width: 100vw;
-    color: #ffffff;
+/*BKG HOMEPAGE*/
+    body, html {
+        padding: 0;
+        margin: 0;
+        font-family: Helvetica;
+        height: 100vh;
+        width: 100vw;
+        color: #ffffff;
+        overflow: hidden;
+        position: relative;
+    }
 
-}
+    .background-video {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    #bgVideo {
+        position: absolute;
+        object-fit: cover; /* Ensures the video fills the space */
+        width: 100vw;
+        height: 100vh;
+        z-index: -1; /* Places the video behind content */
+    }
 
 /*HOMEPAGE*/
+    .linkscolumn {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        padding: 10px;
+        z-index: 2;
+    }
 
-.link {
-    color: #ffffff;
-    cursor: pointer;
-    text-decoration: none;
-}
+    .vertical-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.update {
-    position: absolute;
-    padding: 5px;
-    cursor: move;
-    z-index: 999; /* Ensure update above*/
-    top: 125px;
-    left: 750px;
-}
+    .vertical-column a {
+        display: block;
+        margin-bottom: 10px;
+        color: transparent;
+        text-decoration: none;
+        background-color: transparent;
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+    }
 
-.popup-note {
-    display: none; /* Hidden by default */
-    position: absolute;
-    color: #2277cc;
-    background-color: #ffffff;
-    border: 1px solid #2277cc;
-    padding: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    width: 250px;
-    height: 305px;
-}
+    .vertical-column a:hover {
+        background-color: rgb(0, 38, 255);
+        color: rgb(255, 255, 255); /* Change text color when hovered for contrast */
+    }
 
-.popup-rule {
-    display: none; /* Hidden by default */
-    position: absolute;
-    color: #2277cc;
-    background-color: #ffffff;
-    border: 1px solid #2277cc;
-    padding: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    width: 250px;
-    height: 250px;
-}
+    a {
+        text-decoration: none;
+        z-index: 999; /* Ensure update above*/
+    }
 
-#trigger-text {
-    color: #2277cc;
-    cursor: pointer;
-    text-decoration: underline;
-}
+    a:hover {
+        text-decoration: none;
+        z-index: 999; /* Ensure update above*/
+    }
 
-#trigger-text2, #trigger-text3, #trigger-text4 {
-    color: #ffffff;
+    a strong {
+        text-decoration: none;
+        z-index: 999; /* Ensure update above*/ 
+    }
+
+    /*CONTAINER*/
+    .container {
+        width: 50vw; /* 100% of the viewport width */
+        height: 100vh; /* 100% of the viewport height */
+        display: grid;
+        grid-template-columns: repeat(19, 1fr); /* 19 equal columns */
+        grid-template-rows: repeat(20, 1fr); /* 20 equal rows */
+        z-index: 1;
+        position: absolute;
+      }
+      
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Ensures items fill their grid cell vertically */
+        width: 100%; /* Ensures items fill their grid cell horizontally */
+      }
+      
+      .item:hover {
+        background-color: rgb(0, 38, 255); /* Change color on hover */
+      }
+    
+/*SEA OF LINKS*/
+    .supercontainer {
+        width: 100vw; /* 100% of the viewport width */
+        height: 100vh; /* 100% of the viewport height */
+        display: grid;
+        grid-template-columns: repeat(19, 1fr); /* 19 equal columns */
+        grid-template-rows: repeat(20, 1fr); /* 20 equal rows */
+        z-index: 1;
+        position: absolute;
+      }
+      
+      .hover-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent; 
+        height: 100%; /* Ensures items fill their grid cell vertically */
+        width: 100%; /* Ensures items fill their grid cell horizontally */
+      }
+      
+      .hover-item {
+        background-color: transparent; 
+      }
+      
+      .hover-text {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        font-size: 25px;
+        text-align: center;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+      }
+      
+      .hover-container:hover .hover-text {
+        opacity: 1;
+        visibility: visible;}
+
+      .hover-item-link {
+            text-decoration: none; /* Prevents underlines on links */
+            display: block; /* Makes the anchor behave like a block element */
+          }
+
+/*TRIGGER RETURN TO MAIN PAGE*/
+#trigger-text3 {
     cursor: pointer;
     text-decoration: none
 }
 
-a {
-    text-decoration: none;
-    z-index: 999; /* Ensure update above*/
-}
-
-a:hover {
-    text-decoration: none;
-    z-index: 999; /* Ensure update above*/
-}
-
-a strong {
-    text-decoration: none;
-    z-index: 999; /* Ensure update above*/ 
-}
-
-.vertical-column {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    z-index: 999; /* Ensure update above*/
-}
-
-.vertical-column a {
-    display: block;
-    margin-bottom: 10px; /* Adds space between links */
-    z-index: 999; /* Ensure update above*/
-    background-color: rgba(54, 46, 38, 0.249);
-}
-
-.homechat {
+.return {
     position: absolute;
     top: 25px;
     right: 25px;
     padding: 10px;
 }
+
+/*CHATROOM*/
+.Chatroom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 75%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
 
 /*READING*/
 .img1 {
@@ -680,52 +751,9 @@ a strong {
     right: 500px;
 }
 
-/*GOODREADS*/
-.img24 {
-    width: 150px;
-    height: auto;
-    cursor: pointer;
-    z-index: 105; /*GOODREADS*/
-    position: relative;
-    display: block;
-    margin: 0 auto; /* Center the image horizontally */
-}
-
-.img24container {
-    position: absolute;
-    width: 150px; 
-    height: auto;
-    padding: 10px;
-    cursor: move;
-    z-index: 115; /*GOODREADS*/
-    display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    bottom: 100px; 
-    right: 300px;
-}
 
 
-/*CHATROOM*/
-.chathome{
-position: absolute;
-top: 25px;
-right: 25px;
-padding: 10px;
 
-}
-
-.Chatroom {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 75%;
-    width: 75%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 /*YOUTUBE*/
@@ -840,16 +868,12 @@ padding: 10px;
     text-align: center;
 }
 
-/* Ensure no content is covered at the top, left, and right */
-body {
-    margin: 0; /* Remove default body margin */
-    padding-top: 20px; /* Add space at the top */
-    padding-left: 20px; /* Add space on the left */
-    padding-right: 20px; /* Add space on the right */
-    box-sizing: border-box;
-}
 
 .grid-container {
     padding-bottom: 20px; /* Add space at the bottom */
     height: auto; /* Adjust height to allow content to grow */
 }
+
+
+
+
